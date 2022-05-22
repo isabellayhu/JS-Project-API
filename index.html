@@ -13,10 +13,6 @@
     </head>
     
     <body>
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-
         <header class="container">
             <h1>Coordinates Finder</h1>
         </header>
@@ -25,7 +21,9 @@
             <form class="mb-3">
                 <label for="inputLocation" class="form-label">Location</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="location" placeholder="Search">
+                    <input type="text" list="suggestions" class="form-control" id="location" placeholder="Search">
+                    <datalist id="suggestions">
+                    </datalist>
                     <button type="button" class="btn btn-outline-secondary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -41,8 +39,6 @@
                     <div class="form-floating">
                         <input type="number" readonly class="form-control" id="longitude" placeholder="-73.990593" value="-73.990593">
                         <label for="longitude">Longitude</label>
-                        <detailist id="suggestions">
-                        </detailist>
                     </div>
                 </div>
                 <div class="col-md">
@@ -53,5 +49,9 @@
                 </div>
             </div>
         </main>
+        
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>
