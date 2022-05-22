@@ -18,32 +18,31 @@
         </header>
 
         <main class="container">
-            <form class="mb-3">
+            <form class="mb-3" id="searchForm">
                 <label for="inputLocation" class="form-label">Location</label>
                 <div class="input-group mb-3">
                     <input type="text" list="suggestions" class="form-control" id="location" placeholder="Search">
                     <datalist id="suggestions">
                     </datalist>
-                    <button type="button" class="btn btn-outline-secondary">
+                    <button type="submit" class="btn btn-outline-secondary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
                     </button>
                 </div>
-                </button>
             </form>
 
             <label for="outputCoordinates" class="form-label">Coordinates</label>
             <div class="row g-2">
                 <div class="col-md">
                     <div class="form-floating">
-                        <input type="number" readonly class="form-control" id="longitude" placeholder="-73.990593" value="-73.990593">
+                        <input type="number" readonly class="form-control" id="longitude" placeholder="151.2082848" value="151.2082848">
                         <label for="longitude">Longitude</label>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="form-floating">
-                        <input type="number" readonly class="form-control" id="latitude" placeholder="40.740121" value="40.740121">
+                        <input type="number" readonly class="form-control" id="latitude" placeholder="-33.8698439" value="-33.8698439">
                         <label for="latitude">Latitude</label>
                     </div>
                 </div>
